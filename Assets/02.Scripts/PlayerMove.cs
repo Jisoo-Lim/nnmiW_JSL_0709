@@ -1,86 +1,91 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class PlayerMove : MonoBehaviour
 {
     private Transform tr;
-    public float speed = 10.0f;
-    public GameObject door;
-    public GameObject returnRoad;
-    public HingeJoint hinge;
-    public JointLimits limits;
-    private NavMeshAgent agent;
-    public GameObject hole;
-    
-    public GameObject returnStart;
+    private Animator animator;
+    private Rigidbody rigidbody;
 
-    void Awake()
-    {
-        agent = GetComponent<NavMeshAgent>();
-        tr = GetComponent<Transform>();
-        hinge = door.GetComponent<HingeJoint>();
-        limits = hinge.limits;
-        hinge.useLimits = true;
+    public float moveSpeed = 10.0f;
+    public float turnSpeed = 80.0f;
+    public float JumpPower = 5.0f;
 
-    }
+    // 델리게이트 선언
+    public delegate void PlayerDieHandler();
+    // 이벤트 선언
+    public static event PlayerDieHandler OnPlayerDie;
 
     void Start()
     {
-        limits.min = 120.0f;
-        limits.max = 120.0f;
-
-        hinge.limits = limits;
+        tr = GetComponent<Transform>();
+        animator = GetComponent<Animator>();
+        rigidbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
         Move();
+        Jump();
     }
 
     void Move()
     {
-        float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
 
         Vector3 moveDir = (Vector3.forward*v)+(Vector3.right*h);
 
-        tr.Translate(moveDir.normalized*speed*Time.deltaTime);
-  
+        tr.Translate(moveDir.normalized*moveSpeed*Time.deltaTime);
+
+        Animation(h,v);
     }
 
-    void OnTriggerExit(Collider coll)
+    void Animation(float h, float v)
     {
-        if(coll.CompareTag("BASICENDPOS"))
+        if(v>= 0.1f)
         {
-            door.SetActive(false);
+            // 전진 애니메이션
         }
-        else if(coll.CompareTag("OWNENDPOS"))
+        else if (v<=-0.1f)
         {
-            Debug.Log("내 길");
-            // 문 안보이게
-            door.transform.parent.gameObject.SetActive(false);
-            // 리턴길 생성 
-            returnRoad.SetActive(true);
-            // 리턴길 위로 플레이어 이동
-            agent.updatePosition = false;
-            agent.updateRotation = false;
-            tr.position = returnStart.transform.position;
+            // 후진 애니메이션
+        }
+        else if (h>=0.1f)
+        {   
+            // 오른쪽 이동 애니메이션
+        }
+        else if(h<=-0.1f)
+        {
+            // 왼쪽 이동 애니메이션
+        }
+        else
+        {
+            // Idle
         }
     }
 
-    void OnCollisionEnter(Collision coll)
+    void Jump()
     {
-        if(coll.collider.CompareTag("RETURNEND"))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
-
-            door.transform.parent.gameObject.SetActive(true);
-            returnRoad.SetActive(false);
-            hole.SetActive(false);
+            rigidbody.AddForce(Vector3.up * JumpPower, ForceMode.Impulse);
         }
+    }
 
+    void OnTriggerEnter(Collider coll)
+    {
+        // 충돌한 Collider가 키보드이면 인벤토리에 저장
+        if(coll.CompareTag("KEYBOARD"))
+        {
+        }
+    }
+
+    void PlayerDie()
+    {
+        // 플레이어 사망 이벤트 호출(발생)
+        OnPlayerDie();
     }
 }
