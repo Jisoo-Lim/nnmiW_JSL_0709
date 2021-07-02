@@ -9,6 +9,9 @@ TagManager:
   - PLAYEREXIT
   - PUBLICENTER
   - PLAYERENTER
+  - STARTPOINT
+  - LOBJ
+  - GOBJ
   layers:
   - Default
   - TransparentFX

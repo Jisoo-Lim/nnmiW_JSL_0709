@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 6635529376975070320}
   - component: {fileID: 3999066839148033820}
   - component: {fileID: 2363223359726151032}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 4
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2081562099182269519
@@ -108,11 +108,11 @@ GameObject:
   - component: {fileID: 3787764555816067034}
   - component: {fileID: 274115569269159168}
   - component: {fileID: 4502872756933844570}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Quad (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 4
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8971884608325779555
@@ -202,11 +202,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7013186678950725181}
   - component: {fileID: 7013186678950725180}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: clay_cube+
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 4
   m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &7013186678950725181
@@ -258,11 +258,11 @@ GameObject:
   - component: {fileID: 7013186679289945881}
   - component: {fileID: 7013186679289945882}
   - component: {fileID: 1041552849536731621}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor2
-  m_TagString: Untagged
+  m_TagString: PLAYERENTER
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 4
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7013186679289945887
@@ -328,9 +328,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc05aec4547de248a118d88a780beae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  claymationFile: {fileID: 4900000, guid: a1be731eb047ca740942ee6840f38d69, type: 3}
+  claymationFile: {fileID: 4900000, guid: 2ad6163fb27e9aa4a8ab441666c7c550, type: 3}
   instanceOf: {fileID: 0}
-  material: {fileID: 2100000, guid: fc3b4c2dba3730d45beb392a70f8705f, type: 2}
+  material: {fileID: 2100000, guid: 9b96181ddd05c47448ee785d9fe69d95, type: 2}
   frameRate: 30
   playAnim: 0
 --- !u!65 &7013186679289945882

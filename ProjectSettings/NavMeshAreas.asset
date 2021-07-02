@@ -13,9 +13,9 @@ NavMeshProjectSettings:
     cost: 2
   - name: PUBLIC
     cost: 1
-  - name: 
+  - name: PUBLICG
     cost: 1
-  - name: 
+  - name: PUBLICL
     cost: 1
   - name: 
     cost: 1

@@ -15,6 +15,11 @@ public class GameManager : MonoBehaviour
     // 대중 생성 간격
     public float createTime = 3.0f;
 
+    public GameObject[] glObjs;
+    public GameObject gObj;
+    public GameObject lObj;
+    public Transform obgTr;
+
     public static GameManager instance = null;
 
     void Awake()
@@ -28,6 +33,11 @@ public class GameManager : MonoBehaviour
             Destroy(this.gameObject);
         }
         DontDestroyOnLoad(this.gameObject);
+
+        gObj = GameObject.FindGameObjectWithTag("GOBJ");
+        lObj = GameObject.FindGameObjectWithTag("LOBJ");
+        glObjs[0] = gObj;
+        glObjs[1] = lObj;
     }
 
     void Start()

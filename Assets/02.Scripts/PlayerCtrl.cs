@@ -5,12 +5,13 @@ using UnityEngine;
 public class PlayerCtrl : MonoBehaviour
 {
     private Transform tr;
+    public Transform objPos;
+
     private Animator animator;
     private new Rigidbody rigidbody;
-
+    private bool onStart;
 
     public float moveSpeed = 10.0f;
-    public float turnSpeed = 80.0f;
     public float JumpPower = 5.0f;
 
     // 델리게이트 선언
@@ -18,18 +19,25 @@ public class PlayerCtrl : MonoBehaviour
     // 이벤트 선언
     public static event PlayerDieHandler OnPlayerDie;
 
-    void Start()
+    void Awake()
     {
         tr = GetComponent<Transform>();
         animator = GetComponent<Animator>();
-        rigidbody = GetComponent<Rigidbody>();
+        rigidbody = GetComponent<Rigidbody>(); 
     }
 
-    // Update is called once per frame
+    void Start()
+    {
+        onStart = false;
+    }
+
     void Update()
     {
-        Move();
-        Jump();
+        if(!onStart)
+        {
+            Move();
+            Jump();
+        }
 
         Debug.DrawRay(tr.position, -tr.up *2.0f, Color.green);
     }
@@ -48,7 +56,7 @@ public class PlayerCtrl : MonoBehaviour
 
     void Animation(float h, float v)
     {
-        if(Input.GetAxis("Horizontal")>=0.1f||Input.GetAxis("Horizontal")<=-0.1f||Input.GetAxis("Vertical")>=0.1f||Input.GetAxis("Vertical")<=-0.1f)
+        if(h>=0.1f||h<=-0.1f||v>=0.1f||v<=-0.1f)
         {
             animator.SetBool("IsWalk", true);
         }
@@ -83,6 +91,7 @@ public class PlayerCtrl : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
             rigidbody.AddForce(Vector3.up * JumpPower, ForceMode.Impulse);
+            //animator.SetTrigger("Jump");
         }
     }
 
@@ -92,6 +101,19 @@ public class PlayerCtrl : MonoBehaviour
 
     void OnTriggerEnter(Collider coll)
     {
+        if(coll.CompareTag("STARTPOINT"))
+        {
+            onStart = true;
+
+            int idx = Random.Range(0, GameManager.instance.glObjs.Length);
+            GameObject ogj = Instantiate(GameManager.instance.glObjs[idx], GameManager.instance.obgTr.position, Quaternion.identity);
+        }
+        else if(coll.CompareTag("GOBJ")||coll.CompareTag("LOBJ"))
+        {
+            onStart = false;
+            coll.gameObject.transform.parent = this.gameObject.transform;
+            coll.gameObject.transform.position = objPos.transform.position;
+        }
         // // 충돌한 Collider가 키보드이면 인벤토리에 저장
         // if(coll.CompareTag("KEYBOARD"))
         // {

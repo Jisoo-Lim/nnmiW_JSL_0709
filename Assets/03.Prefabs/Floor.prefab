@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 8222130136275063659}
   - component: {fileID: 1833940444716154887}
   - component: {fileID: 1064861738455847523}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 3
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3670377309247750996
@@ -106,11 +106,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5719330890491703590}
   - component: {fileID: 5719330890491703591}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: clay_cube+
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 3
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &5719330890491703590
@@ -162,11 +162,11 @@ GameObject:
   - component: {fileID: 5719330890956744706}
   - component: {fileID: 5719330890956744705}
   - component: {fileID: 2339808883471548158}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 3
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5719330890956744708
@@ -232,9 +232,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc05aec4547de248a118d88a780beae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  claymationFile: {fileID: 4900000, guid: d68c36d9a867d5d46bf1973840aeb3d4, type: 3}
+  claymationFile: {fileID: 4900000, guid: e98bb61457f667c47a523f1ac501b13c, type: 3}
   instanceOf: {fileID: 0}
-  material: {fileID: 2100000, guid: 863a0ba5844b0c64fb5201522963f01d, type: 2}
+  material: {fileID: 2100000, guid: 06527ea75a716fd4e9deac727e9157a9, type: 2}
   frameRate: 30
   playAnim: 0
 --- !u!65 &5719330890956744705
@@ -257,7 +257,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5719330890956744704}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -304,11 +304,11 @@ GameObject:
   - component: {fileID: 1917454612261660865}
   - component: {fileID: 3296960023699128859}
   - component: {fileID: 1184895226760816961}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Quad (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 3
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5948820251511404408

@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 89644744499442141}
   - component: {fileID: 89644744499442140}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: clay_cube+
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 4
   m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &89644744499442141
@@ -66,11 +66,11 @@ GameObject:
   - component: {fileID: 89644744553441529}
   - component: {fileID: 89644744553441530}
   - component: {fileID: 7933642180150459909}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (14)
-  m_TagString: Untagged
+  m_TagString: PLAYERENTER
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 4
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &89644744553441535
@@ -136,9 +136,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc05aec4547de248a118d88a780beae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  claymationFile: {fileID: 4900000, guid: 10db8fdb212ed8940871a6d6c2202ea1, type: 3}
+  claymationFile: {fileID: 4900000, guid: 111e0f75470850f4a84f00a6fc3cc8a4, type: 3}
   instanceOf: {fileID: 0}
-  material: {fileID: 2100000, guid: b7ff047e7a99aa54aa5751d348bfdf15, type: 2}
+  material: {fileID: 2100000, guid: 29d443dedab0163418c70ee95b0febda, type: 2}
   frameRate: 30
   playAnim: 0
 --- !u!65 &89644744553441530
@@ -208,11 +208,11 @@ GameObject:
   - component: {fileID: 6124179163608377402}
   - component: {fileID: 7178871823574205152}
   - component: {fileID: 6778139133598624186}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Quad (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 4
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2084932221790009219
@@ -304,11 +304,11 @@ GameObject:
   - component: {fileID: 4358219472017167248}
   - component: {fileID: 6274122659386409212}
   - component: {fileID: 4658543170909590168}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 4
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8975272702624285615
