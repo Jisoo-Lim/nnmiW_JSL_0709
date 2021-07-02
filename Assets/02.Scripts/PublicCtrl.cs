@@ -86,7 +86,6 @@ public class PublicCtrl : MonoBehaviour
 
             if(distance<=lookDist)
             {
-                Debug.Log("Look사정거리");
                 if(Physics.Raycast(playerTr.position, -playerTr.up, out hit, 2.0f, 1<<9))
                 {
                     state = State.LOOK;
