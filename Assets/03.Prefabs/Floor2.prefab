@@ -16,7 +16,7 @@ GameObject:
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 3
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2081562099182269519
@@ -112,7 +112,7 @@ GameObject:
   m_Name: Quad (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 3
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8971884608325779555
@@ -206,7 +206,7 @@ GameObject:
   m_Name: clay_cube+
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 3
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &7013186678950725181
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 1}
   attrs: {x: 0, y: 0, z: 0, w: 0}
   primitiveType: 0
   mode: 0
@@ -262,7 +262,7 @@ GameObject:
   m_Name: Floor2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 3
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7013186679289945887
@@ -328,9 +328,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc05aec4547de248a118d88a780beae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  claymationFile: {fileID: 4900000, guid: 6036f1251ee6c7849b059e8c064fc9c0, type: 3}
+  claymationFile: {fileID: 4900000, guid: cadce0fc6483b6543a1513b85ed4fb4a, type: 3}
   instanceOf: {fileID: 0}
-  material: {fileID: 2100000, guid: fe4b0afd4e13b314aa5819b8a1b2aae5, type: 2}
+  material: {fileID: 2100000, guid: ff9b6e8fb1c3b4c48bcae2c5f65053fe, type: 2}
   frameRate: 30
   playAnim: 0
 --- !u!65 &7013186679289945882
@@ -353,7 +353,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7013186679289945883}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

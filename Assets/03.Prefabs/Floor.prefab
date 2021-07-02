@@ -213,7 +213,7 @@ MonoBehaviour:
   storeAssetPath: ClayxelContainer
   frozen: 1
   clayObjectsOrderLocked: 1
-  autoBounds: 0
+  autoBounds: 1
   renderMode: 0
   retopoMaxVerts: -1
   retopoApplied: 0
@@ -232,9 +232,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc05aec4547de248a118d88a780beae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  claymationFile: {fileID: 4900000, guid: 6036f1251ee6c7849b059e8c064fc9c0, type: 3}
+  claymationFile: {fileID: 4900000, guid: 218fc2fa750023d4ca03ce386c4909fc, type: 3}
   instanceOf: {fileID: 0}
-  material: {fileID: 2100000, guid: fe4b0afd4e13b314aa5819b8a1b2aae5, type: 2}
+  material: {fileID: 2100000, guid: 0e4e0001185c7864b8cc5bb4538734e8, type: 2}
   frameRate: 30
   playAnim: 0
 --- !u!65 &5719330890956744705
@@ -257,7 +257,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5719330890956744704}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
