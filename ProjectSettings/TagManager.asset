@@ -4,13 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - BASICSTARTPOS
-  - BASICENDPOS
-  - OWNSTARTPOS
-  - OWNENDPOS
-  - FINALPOS
-  - RETURNSTART
-  - RETURNEND
+  - DOOR
+  - PUBLICEXIT
+  - PLAYEREXIT
+  - PUBLICENTER
+  - PLAYERENTER
   layers:
   - Default
   - TransparentFX

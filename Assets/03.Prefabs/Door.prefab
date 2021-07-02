@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 6702347105472467897}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 0.1, z: 3}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 6702347105551633048}
   m_RootOrder: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: 0
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.8679245, g: 0.8406168, b: 0.8220719, a: 1}
   attrs: {x: 0, y: 0, z: 0, w: 0}
   primitiveType: 0
   mode: 0
@@ -64,9 +64,11 @@ GameObject:
   - component: {fileID: 6702347105551633048}
   - component: {fileID: 6702347105551633055}
   - component: {fileID: 6702347105551633054}
+  - component: {fileID: 343221681605442634}
+  - component: {fileID: 1858168368324740232}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: DOOR
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,6 +136,61 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   claymationFile: {fileID: 4900000, guid: 0f688876df3157e4c8d5bfcea4d5d612, type: 3}
   instanceOf: {fileID: 0}
-  material: {fileID: 0}
+  material: {fileID: 2100000, guid: 6053bb6448934a34a85b0a2b3a83b53c, type: 2}
   frameRate: 30
   playAnim: 0
+--- !u!65 &343221681605442634
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6702347105551633052}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.060662, y: 3.049978, z: 3.0883229}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1858168368324740232
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6702347105551633052}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 76e2d94365b0c6c44a51cbd1cb34c794, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}

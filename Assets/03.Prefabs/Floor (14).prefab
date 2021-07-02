@@ -136,9 +136,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc05aec4547de248a118d88a780beae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  claymationFile: {fileID: 4900000, guid: 049481f8f3602d546b64e999dda15f4d, type: 3}
+  claymationFile: {fileID: 4900000, guid: 10db8fdb212ed8940871a6d6c2202ea1, type: 3}
   instanceOf: {fileID: 0}
-  material: {fileID: 2100000, guid: cbdac825d1b4f9c459eb32db846d1873, type: 2}
+  material: {fileID: 2100000, guid: b7ff047e7a99aa54aa5751d348bfdf15, type: 2}
   frameRate: 30
   playAnim: 0
 --- !u!65 &89644744553441530
