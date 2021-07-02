@@ -36,6 +36,7 @@ public class PublicCtrl : MonoBehaviour
 
     void OnEnable()
     {
+        Debug.Log("활성화");
         // 대중의 상태 체크
         StartCoroutine(CheckPublicState());
 
@@ -47,20 +48,20 @@ public class PublicCtrl : MonoBehaviour
     {
         publicTr = GetComponent<Transform>();
         playerTr = GameObject.FindGameObjectWithTag("Player")?.GetComponent<Transform>();
+        doorTr = GameObject.FindGameObjectWithTag("DOOR")?.GetComponent<Transform>();
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
-        doorTr = GameObject.FindGameObjectWithTag("DOOR")?.GetComponent<Transform>();
     }
 
     void Start()
     {
         agent.updateRotation = false;
-    
     }
 
     void Update()
     {
         Debug.Log($"대중 상태 : {state}");
+
         if(agent.remainingDistance>=2.0f)
         {
             Vector3 direction = agent.desiredVelocity;
@@ -81,18 +82,23 @@ public class PublicCtrl : MonoBehaviour
 
             if(state == State.PASS) yield break;
             
-            float distance = Vector3.Distance(playerTr.position, publicTr .position);
+            float distance = Vector3.Distance(playerTr.position, publicTr.position);
 
             if(distance<=lookDist)
             {
-                if(Physics.Raycast(playerTr.position, -playerTr.up, out hit, 1.0f, 1<<9))
+                Debug.Log("Look사정거리");
+                if(Physics.Raycast(playerTr.position, -playerTr.up, out hit, 2.0f, 1<<9))
                 {
                     state = State.LOOK;
+                }
+                else
+                {
+                    state = State.WALK;
                 }
             }
             else if(distance<=walkDist)
             {
-                state = State.WALK;
+               state = State.WALK;
             }
             else
             {
@@ -120,6 +126,7 @@ public class PublicCtrl : MonoBehaviour
                 break;
 
                 case State.LOOK:
+                    agent.isStopped = true;
                     publicTr.LookAt(playerTr.position);
                     animator.SetBool(hashLook, true);
                 break;
@@ -130,7 +137,7 @@ public class PublicCtrl : MonoBehaviour
                     animator.SetTrigger(hashPass);
                     GetComponent<CapsuleCollider>().enabled = false;
                 
-                yield return new WaitForSeconds(3.0f);
+                yield return new WaitForSeconds(2.0f);
 
                     GetComponent<CapsuleCollider>().enabled = true;
                     this.gameObject.SetActive(false);

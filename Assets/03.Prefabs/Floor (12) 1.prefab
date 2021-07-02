@@ -354,6 +354,7 @@ GameObject:
   - component: {fileID: 7051955730390163586}
   - component: {fileID: 7051955730390163585}
   - component: {fileID: 1079204418828990078}
+  - component: {fileID: 3876400633117102334}
   m_Layer: 0
   m_Name: Floor (12) 1
   m_TagString: Untagged
@@ -420,7 +421,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7051955730390163584}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fc05aec4547de248a118d88a780beae, type: 3}
   m_Name: 
@@ -485,3 +486,11 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &3876400633117102334
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7051955730390163584}
+  m_Mesh: {fileID: 4300000, guid: 3bb23e409aabb914bbf1a75cc662d81e, type: 2}

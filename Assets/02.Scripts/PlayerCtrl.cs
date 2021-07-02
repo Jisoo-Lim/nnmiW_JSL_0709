@@ -31,7 +31,7 @@ public class PlayerCtrl : MonoBehaviour
         Move();
         Jump();
 
-        Debug.DrawRay(tr.position, -tr.up *1.0f, Color.green);
+        Debug.DrawRay(tr.position, -tr.up *2.0f, Color.green);
     }
 
     void Move()
