@@ -27,7 +27,7 @@ public class Pickup : MonoBehaviour
     public void Destroy()
     {
         SceneLoader.instance.ReturnStage();
-        Destroy(this.gameObject);
+        Destroy(this.gameObject, 1.0f);
     }
 
     // Update is called once per frame

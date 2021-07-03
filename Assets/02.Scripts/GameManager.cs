@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        DontDestroyOnLoad(this.gameObject);
+        //DontDestroyOnLoad(this.gameObject);
 
         playerTr = GameObject.FindGameObjectWithTag("Player")?.GetComponent<Transform>();
         // gObj = GameObject.FindGameObjectWithTag("GOBJ");
@@ -59,6 +59,11 @@ public class GameManager : MonoBehaviour
 
             InvokeRepeating("CreatePublic", 3.0f, createTime);
         }
+    }
+
+    void Update()
+    {
+        
     }
 
     void CreatePublic()

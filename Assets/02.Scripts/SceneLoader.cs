@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     private Transform playerTr;
+    private Transform startPos;
+    private Transform doorPos;
     private RaycastHit hit;
 
     public static SceneLoader instance = null;
@@ -26,6 +28,8 @@ public class SceneLoader : MonoBehaviour
     void Start()
     {
         playerTr = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        startPos = GameObject.FindGameObjectWithTag("STARTPOINT")?.GetComponent<Transform>();
+        doorPos = GameObject.FindGameObjectWithTag("DOOR")?.GetComponent<Transform>();
     }
 
     void Update()
@@ -39,8 +43,14 @@ public class SceneLoader : MonoBehaviour
     {
         if(Physics.Raycast(playerTr.position, playerTr.forward, out hit, 0.8f, 1<<11))
         {
-            if(hit.collider.GetComponent<SceneInfo>().sceneInfo == 1)
+            if(hit.collider.GetComponent<SceneInfo>().sceneInfo == 0)
             {
+                playerTr.position = doorPos.position;
+                SceneManager.LoadScene("Stage0_D");
+            }
+            else if(hit.collider.GetComponent<SceneInfo>().sceneInfo == 1)
+            {
+                playerTr.position = doorPos.position;
                 SceneManager.LoadScene("Stage1_D");
             }
         }
@@ -53,6 +63,8 @@ public class SceneLoader : MonoBehaviour
         {
             if(hit.collider.GetComponent<SceneInfo>().sceneInfo == 1)
             {
+                playerTr.position = new Vector3(0,0.3f, 3.0f);
+                //playerTr.position = startPos.position;
                 SceneManager.LoadScene("Stage1");
             }
         }
@@ -65,6 +77,7 @@ public class SceneLoader : MonoBehaviour
         {
             if(hit.collider.GetComponent<SceneInfo>().sceneInfo == 1)
             {
+                playerTr.position = new Vector3(0,0.3f, 3.0f);
                 SceneManager.LoadScene("Stage2");
             }
         }

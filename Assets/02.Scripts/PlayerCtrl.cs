@@ -50,17 +50,26 @@ public class PlayerCtrl : MonoBehaviour
         float v = Input.GetAxis("Vertical");
 
         tr.Translate(Vector3.forward*Time.deltaTime*moveSpeed*v);
-        tr.Rotate(Vector3.up * Time.deltaTime *turnSpeed*h);
+
+        if(Input.GetKeyDown(KeyCode.A)||(Input.GetKeyDown(KeyCode.LeftArrow)))
+        {
+            transform.Rotate(0,-90,0);
+        }
+        else if(Input.GetKeyDown(KeyCode.D)||Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            transform.Rotate(0, 90, 0);
+        }
+        //tr.Rotate(Vector3.up * Time.deltaTime *turnSpeed*h);
    
         // Vector3 moveDir = (Vector3.forward*v)+(Vector3.right*h);
         // tr.Translate(moveDir.normalized*moveSpeed*Time.deltaTime);
 
-        Animation(h,v);
+        Animation(v, h);
     }
 
-    void Animation(float h, float v)
+    void Animation(float v, float h)
     {
-        if(h>=0.1f||h<=-0.1f||v>=0.1f||v<=-0.1f)
+        if(v>=0.1f||v<=-0.1f||h>=0.1f||h<=-0.1f)
         {
             animator.SetBool("IsWalk", true);
         }
