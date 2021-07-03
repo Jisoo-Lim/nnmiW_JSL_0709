@@ -588,6 +588,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
+    1: CLAYXELS_URP;CLAYXELS_RETOPO
     13: CLAYXELS_URP;CLAYXELS_RETOPO
     14: CLAYXELS_URP;CLAYXELS_RETOPO
   additionalCompilerArguments: {}
