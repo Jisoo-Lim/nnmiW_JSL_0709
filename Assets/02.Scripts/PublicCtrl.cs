@@ -36,7 +36,6 @@ public class PublicCtrl : MonoBehaviour
 
     void OnEnable()
     {
-        Debug.Log("활성화");
         // 대중의 상태 체크
         StartCoroutine(CheckPublicState());
 
@@ -60,7 +59,7 @@ public class PublicCtrl : MonoBehaviour
 
     void Update()
     {
-        Debug.Log($"대중 상태 : {state}");
+        //Debug.Log($"대중 상태 : {state}");
 
         if(agent.remainingDistance>=2.0f)
         {

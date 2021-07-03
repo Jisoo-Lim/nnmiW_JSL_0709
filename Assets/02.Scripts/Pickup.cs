@@ -16,7 +16,6 @@ public class Pickup : MonoBehaviour
         if(coll.CompareTag("Player"))
         {
             Invoke("Anim",2.0f);            
-
         }
     }
 
@@ -27,6 +26,7 @@ public class Pickup : MonoBehaviour
 
     public void Destroy()
     {
+        SceneLoader.instance.ReturnStage();
         Destroy(this.gameObject);
     }
 

@@ -11,12 +11,12 @@ public class Inventory : MonoBehaviour
 
     void Start()
     {
-        keyPanel = GameObject.Find("PANEL");
+        // keyPanel = GameObject.Find("PANEL");
 
-        for(int i = 0; i<maxKeys; i++)
-        {
-            GameObject go = Instantiate(keyPrefab, keyPanel.transform, false);
-        }
+        // for(int i = 0; i<maxKeys; i++)
+        // {
+        //     GameObject go = Instantiate(keyPrefab, keyPanel.transform, false);
+        // }
     }
 
     // Update is called once per frame

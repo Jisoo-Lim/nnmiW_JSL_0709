@@ -12,6 +12,7 @@ public class PlayerCtrl : MonoBehaviour
     private bool onStart;
 
     public float moveSpeed = 10.0f;
+    public float turnSpeed = 150.0f;
     public float JumpPower = 5.0f;
 
     // 델리게이트 선언
@@ -40,6 +41,7 @@ public class PlayerCtrl : MonoBehaviour
         }
 
         Debug.DrawRay(tr.position, -tr.up *2.0f, Color.green);
+        Debug.DrawRay(tr.position, tr.forward *0.8f, Color.blue);
     }
 
     void Move()
@@ -47,9 +49,11 @@ public class PlayerCtrl : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
-        Vector3 moveDir = (Vector3.forward*v)+(Vector3.right*h);
-
-        tr.Translate(moveDir.normalized*moveSpeed*Time.deltaTime);
+        tr.Translate(Vector3.forward*Time.deltaTime*moveSpeed*v);
+        tr.Rotate(Vector3.up * Time.deltaTime *turnSpeed*h);
+   
+        // Vector3 moveDir = (Vector3.forward*v)+(Vector3.right*h);
+        // tr.Translate(moveDir.normalized*moveSpeed*Time.deltaTime);
 
         Animation(h,v);
     }
@@ -74,11 +78,11 @@ public class PlayerCtrl : MonoBehaviour
         // }
         // else if (h>=0.1f)
         // {   
-        //     // 오른쪽 이동 애니메이션
+        //     // 오른쪽 회전 애니메이션
         // }
         // else if(h<=-0.1f)
         // {
-        //     // 왼쪽 이동 애니메이션
+        //     // 왼쪽 회전 애니메이션
         // }
         // else
         // {
@@ -101,19 +105,20 @@ public class PlayerCtrl : MonoBehaviour
 
     void OnTriggerEnter(Collider coll)
     {
-        if(coll.CompareTag("STARTPOINT"))
-        {
-            onStart = true;
+        // if(coll.CompareTag("STARTPOINT"))
+        // {
+        //     onStart = true;
 
-            int idx = Random.Range(0, GameManager.instance.glObjs.Length);
-            GameObject ogj = Instantiate(GameManager.instance.glObjs[idx], GameManager.instance.obgTr.position, Quaternion.identity);
-        }
-        else if(coll.CompareTag("GOBJ")||coll.CompareTag("LOBJ"))
-        {
-            onStart = false;
-            coll.gameObject.transform.parent = this.gameObject.transform;
-            coll.gameObject.transform.position = objPos.transform.position;
-        }
+        //     int idx = Random.Range(0, GameManager.instance.glObjs.Length);
+        //     GameObject ogj = Instantiate(GameManager.instance.glObjs[idx], GameManager.instance.obgTr.position, Quaternion.identity);
+        // }
+        // else if(coll.CompareTag("GOBJ")||coll.CompareTag("LOBJ"))
+        // {
+        //     onStart = false;
+        //     coll.gameObject.transform.parent = this.gameObject.transform;
+        //     coll.gameObject.transform.position = objPos.transform.position;
+        // }
+
         // // 충돌한 Collider가 키보드이면 인벤토리에 저장
         // if(coll.CompareTag("KEYBOARD"))
         // {

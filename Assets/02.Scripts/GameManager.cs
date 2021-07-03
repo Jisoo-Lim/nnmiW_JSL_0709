@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     // 대중 생성 간격
     public float createTime = 3.0f;
 
+    private Transform playerTr;
+    private RaycastHit hit;
     public GameObject[] glObjs;
     public GameObject gObj;
     public GameObject lObj;
@@ -34,25 +36,29 @@ public class GameManager : MonoBehaviour
         }
         DontDestroyOnLoad(this.gameObject);
 
-        gObj = GameObject.FindGameObjectWithTag("GOBJ");
-        lObj = GameObject.FindGameObjectWithTag("LOBJ");
-        glObjs[0] = gObj;
-        glObjs[1] = lObj;
+        playerTr = GameObject.FindGameObjectWithTag("Player")?.GetComponent<Transform>();
+        // gObj = GameObject.FindGameObjectWithTag("GOBJ");
+        // lObj = GameObject.FindGameObjectWithTag("LOBJ");
+        // glObjs[0] = gObj;
+        // glObjs[1] = lObj;
     }
 
     void Start()
     {
-        // 대중 오브젝트 풀 생성
-        CreatePublicPool();
-
-        Transform spawnPointGroup = GameObject.Find("SpawnPointGroup")?.transform;
-
-        foreach(Transform point in spawnPointGroup)
+        if(!Physics.Raycast(playerTr.position, -playerTr.up, out hit, 2.0f, 1<<13))
         {
-            points.Add(point);
-        }
+            // 대중 오브젝트 풀 생성
+            CreatePublicPool();
 
-        InvokeRepeating("CreatePublic", 3.0f, createTime);
+            Transform spawnPointGroup = GameObject.Find("SpawnPointGroup")?.transform;
+
+            foreach(Transform point in spawnPointGroup)
+            {
+                points.Add(point);
+            }
+
+            InvokeRepeating("CreatePublic", 3.0f, createTime);
+        }
     }
 
     void CreatePublic()

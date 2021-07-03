@@ -672,5 +672,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   walkDist: 40
-  lookDist: 15
+  lookDist: 10
   isPass: 0
