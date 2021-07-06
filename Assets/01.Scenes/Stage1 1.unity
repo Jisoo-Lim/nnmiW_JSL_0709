@@ -282,6 +282,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 689622505}
     - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
       propertyPath: m_Name
       value: Floor (30)
       objectReference: {fileID: 0}
@@ -379,6 +383,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 689622505}
     - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
       propertyPath: m_Name
       value: Floor (34)
       objectReference: {fileID: 0}
@@ -475,6 +483,10 @@ PrefabInstance:
       propertyPath: material
       value: 
       objectReference: {fileID: 689622505}
+    - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
       propertyPath: m_Name
       value: Floor (26)
@@ -662,7 +674,7 @@ MonoBehaviour:
   chunksX: 1
   chunksY: 1
   chunksZ: 1
-  material: {fileID: 1723651490}
+  material: {fileID: 1765519999}
   castShadows: 1
   receiveShadows: 1
   storeAssetPath: Body
@@ -806,6 +818,44 @@ Material:
     - _Smoothness: 0
     m_Colors:
     - _Emission: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &181292349
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Clayxels/ClayxelURPShader
+  m_Shader: {fileID: 4800000, guid: 6ffb0de435695b24fbf9dee0f62e571c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 1aa3096b1b9d9204eaa6c75a4275adb1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaCutoff: 0.5
+    - _ClayxelSize: 1
+    - _Cutoff: 0.01
+    - _Metallic: 0
+    - _NormalOrient: 1
+    - _RoughBump: 0.023
+    - _RoughColor: 0.366
+    - _RoughOrient: 0
+    - _Smoothness: 0
+    m_Colors:
+    - _Emission: {r: 0.6320754, g: 0.58420676, b: 0.53309005, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
 --- !u!1 &181631846
@@ -969,6 +1019,10 @@ PrefabInstance:
       propertyPath: material
       value: 
       objectReference: {fileID: 689622505}
+    - target: {fileID: 7013186679289945883, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 7013186679289945883, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
       propertyPath: m_Name
       value: Floor (28)
@@ -1153,6 +1207,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 848266875}
     - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
       propertyPath: m_Name
       value: Floor (25)
       objectReference: {fileID: 0}
@@ -1253,6 +1311,10 @@ PrefabInstance:
       propertyPath: material
       value: 
       objectReference: {fileID: 689622505}
+    - target: {fileID: 7013186679289945883, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 7013186679289945883, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
       propertyPath: m_Name
       value: Floor (29)
@@ -1648,6 +1710,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 689622505}
     - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
       propertyPath: m_Name
       value: Floor (32)
       objectReference: {fileID: 0}
@@ -1837,6 +1903,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 689622505}
     - target: {fileID: 7013186679289945883, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 7013186679289945883, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
       propertyPath: m_Name
       value: Floor (36)
       objectReference: {fileID: 0}
@@ -1903,44 +1973,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5719330890956744708, guid: 30e48a5fa9171af4aa3b573e7e2857f9, type: 3}
   m_PrefabInstance: {fileID: 719075165}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &565521996
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Clayxels/ClayxelURPShader
-  m_Shader: {fileID: 4800000, guid: 6ffb0de435695b24fbf9dee0f62e571c, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1aa3096b1b9d9204eaa6c75a4275adb1, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _AlphaCutoff: 0.5
-    - _ClayxelSize: 1
-    - _Cutoff: 0.01
-    - _Metallic: 0
-    - _NormalOrient: 1
-    - _RoughBump: 0.023
-    - _RoughColor: 0.366
-    - _RoughOrient: 0
-    - _Smoothness: 0
-    m_Colors:
-    - _Emission: {r: 0.6320754, g: 0.58420676, b: 0.53309005, a: 0}
-    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &566379931
 GameObject:
   m_ObjectHideFlags: 0
@@ -2290,6 +2322,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 689622505}
     - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
       propertyPath: m_Name
       value: Floor (19)
       objectReference: {fileID: 0}
@@ -2462,6 +2498,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4900000, guid: cc8acb8a6b5f20d4f91c641c347a4040, type: 3}
     - target: {fileID: 7013186679289945883, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 7013186679289945883, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
       propertyPath: m_Name
       value: Floor (24)
       objectReference: {fileID: 0}
@@ -2616,6 +2656,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 599778285}
     - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
       propertyPath: m_Name
       value: Floor (17)
       objectReference: {fileID: 0}
@@ -2717,6 +2761,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 689622505}
     - target: {fileID: 7013186679289945883, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 7013186679289945883, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
       propertyPath: m_Name
       value: Floor (35)
       objectReference: {fileID: 0}
@@ -2802,6 +2850,10 @@ PrefabInstance:
       propertyPath: material
       value: 
       objectReference: {fileID: 689622505}
+    - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
       propertyPath: m_Name
       value: Floor (23)
@@ -3179,6 +3231,44 @@ Material:
     - _Emission: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
+--- !u!21 &951082368
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Clayxels/ClayxelURPShader
+  m_Shader: {fileID: 4800000, guid: 6ffb0de435695b24fbf9dee0f62e571c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 1aa3096b1b9d9204eaa6c75a4275adb1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaCutoff: 0.5
+    - _ClayxelSize: 1
+    - _Cutoff: 0.01
+    - _Metallic: 0.828
+    - _NormalOrient: 0.507
+    - _RoughBump: 0.164
+    - _RoughColor: 0.493
+    - _RoughOrient: 0.455
+    - _Smoothness: 0
+    m_Colors:
+    - _Emission: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &963373017
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3279,6 +3369,10 @@ PrefabInstance:
       propertyPath: material
       value: 
       objectReference: {fileID: 35051101}
+    - target: {fileID: 7013186679289945883, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 7013186679289945883, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
       propertyPath: m_Name
       value: Floor (14)
@@ -3404,6 +3498,10 @@ PrefabInstance:
       propertyPath: material
       value: 
       objectReference: {fileID: 689622505}
+    - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
       propertyPath: m_Name
       value: Floor (15)
@@ -3575,6 +3673,10 @@ PrefabInstance:
       propertyPath: material
       value: 
       objectReference: {fileID: 1281614382}
+    - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
       propertyPath: m_Name
       value: Floor (33)
@@ -4665,6 +4767,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 689622505}
     - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
       propertyPath: m_Name
       value: Floor (37)
       objectReference: {fileID: 0}
@@ -4838,44 +4944,6 @@ Material:
     - _RoughBump: 0.023
     - _RoughColor: 0.366
     - _RoughOrient: 0
-    - _Smoothness: 0
-    m_Colors:
-    - _Emission: {r: 0, g: 0, b: 0, a: 0}
-    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
---- !u!21 &1544471327
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Clayxels/ClayxelURPShader
-  m_Shader: {fileID: 4800000, guid: 6ffb0de435695b24fbf9dee0f62e571c, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1aa3096b1b9d9204eaa6c75a4275adb1, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _AlphaCutoff: 0.5
-    - _ClayxelSize: 1
-    - _Cutoff: 0.01
-    - _Metallic: 0
-    - _NormalOrient: 0.474
-    - _RoughBump: 0.263
-    - _RoughColor: 1
-    - _RoughOrient: 0.093
     - _Smoothness: 0
     m_Colors:
     - _Emission: {r: 0, g: 0, b: 0, a: 0}
@@ -5231,6 +5299,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1308960204}
     m_Modifications:
+    - target: {fileID: 1041552849536731621, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1179620186495137202, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
       propertyPath: m_Layer
       value: 9
@@ -5243,10 +5315,38 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 7013186678950725182, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7013186679289945880, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
+      propertyPath: frozen
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7013186679289945880, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
       propertyPath: material
       value: 
-      objectReference: {fileID: 1544471327}
+      objectReference: {fileID: 1738038924}
+    - target: {fileID: 7013186679289945880, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7013186679289945881, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
+      propertyPath: material
+      value: 
+      objectReference: {fileID: 2100000, guid: 08a1cea67e15547409e87b4cc3d6fd0b, type: 2}
+    - target: {fileID: 7013186679289945881, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7013186679289945881, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
+      propertyPath: claymationFile
+      value: 
+      objectReference: {fileID: 4900000, guid: b172c5ed1e6a60147905b54f02ad40e8, type: 3}
+    - target: {fileID: 7013186679289945883, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 7013186679289945883, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
       propertyPath: m_Name
       value: Floor (13)
@@ -5527,7 +5627,45 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7013186679289945887, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
   m_PrefabInstance: {fileID: 716675185}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1723651490
+--- !u!21 &1738038924
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Clayxels/ClayxelURPShader
+  m_Shader: {fileID: 4800000, guid: 6ffb0de435695b24fbf9dee0f62e571c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 1aa3096b1b9d9204eaa6c75a4275adb1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaCutoff: 0.5
+    - _ClayxelSize: 1
+    - _Cutoff: 0.01
+    - _Metallic: 0
+    - _NormalOrient: 0.474
+    - _RoughBump: 0.232
+    - _RoughColor: 1
+    - _RoughOrient: 0.16
+    - _Smoothness: 0
+    m_Colors:
+    - _Emission: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1765519999
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -5653,44 +5791,6 @@ MonoBehaviour:
   clayObjectId: 0
   numSolids: 1
   splineSubdiv: 3
---- !u!21 &1822632527
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Clayxels/ClayxelURPShader
-  m_Shader: {fileID: 4800000, guid: 6ffb0de435695b24fbf9dee0f62e571c, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1aa3096b1b9d9204eaa6c75a4275adb1, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _AlphaCutoff: 0.5
-    - _ClayxelSize: 1
-    - _Cutoff: 0.01
-    - _Metallic: 0.828
-    - _NormalOrient: 0.507
-    - _RoughBump: 0.164
-    - _RoughColor: 0.493
-    - _RoughOrient: 0.455
-    - _Smoothness: 0
-    m_Colors:
-    - _Emission: {r: 0, g: 0, b: 0, a: 0}
-    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &1835102381
 GameObject:
   m_ObjectHideFlags: 0
@@ -6131,6 +6231,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 689622505}
     - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 89644744553441531, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
       propertyPath: m_Name
       value: Floor (31)
       objectReference: {fileID: 0}
@@ -6484,7 +6588,7 @@ MonoBehaviour:
   chunksX: 1
   chunksY: 1
   chunksZ: 1
-  material: {fileID: 1822632527}
+  material: {fileID: 951082368}
   castShadows: 1
   receiveShadows: 1
   storeAssetPath: Body
