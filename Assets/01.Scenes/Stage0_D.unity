@@ -1323,13 +1323,13 @@ GameObject:
   - component: {fileID: 821971064}
   - component: {fileID: 821971063}
   - component: {fileID: 821971062}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: UICamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &821971062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1420,13 +1420,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 821971061}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1197.0193, y: 269.49747, z: -2627.0776}
+  m_LocalRotation: {x: -0.26553816, y: -0.5482732, z: 0.77508706, w: 0.16770858}
+  m_LocalPosition: {x: 38.99, y: 32.61, z: -10.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 49.539, y: -66.595, z: 121.861}
 --- !u!1 &899290395
 GameObject:
   m_ObjectHideFlags: 0
@@ -2484,7 +2484,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 821971064}
+  m_Camera: {fileID: 1687258584}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -3766,6 +3766,10 @@ PrefabInstance:
       propertyPath: color.r
       value: 0.7830189
       objectReference: {fileID: 0}
+    - target: {fileID: 4453503090462932288, guid: 664f9c6c23159fa49936040a755362e6, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4453503090462932288, guid: 664f9c6c23159fa49936040a755362e6, type: 3}
       propertyPath: m_Name
       value: DarkPos
