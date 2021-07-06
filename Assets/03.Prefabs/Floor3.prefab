@@ -101,7 +101,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 631546929172955630}
-  - {fileID: 8959403491010330018}
   - {fileID: 8463210404467127196}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -190,7 +189,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1e9b179ff3c26eb4aa9aeaeb8849f1bf, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -233,73 +232,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631546929513224392}
   m_Mesh: {fileID: 4300000, guid: 482f1a0fada2afc44a8c590f57a3fc10, type: 2}
---- !u!1 &907957201348925268
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8959403491010330018}
-  - component: {fileID: 5798994117861610625}
-  - component: {fileID: 5526876126143193364}
-  m_Layer: 0
-  m_Name: clay_cube+ (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 3
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
---- !u!4 &8959403491010330018
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 907957201348925268}
-  m_LocalRotation: {x: -0.707107, y: -0, z: -0, w: 0.7071066}
-  m_LocalPosition: {x: 0, y: 1.5, z: 1.5}
-  m_LocalScale: {x: 3, y: 0.1, z: 3}
-  m_Children: []
-  m_Father: {fileID: 631546929513224396}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!114 &5798994117861610625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 907957201348925268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7abbfd96705db9d42bf2ff005c1a5a71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blend: 0
-  color: {r: 0, g: 0, b: 0, a: 1}
-  attrs: {x: 0, y: 0, z: 0, w: 0}
-  primitiveType: 0
-  mode: 0
-  offsetter: {fileID: 0}
-  splinePoints: []
-  clayObjectId: 1
-  numSolids: 1
-  splineSubdiv: 3
---- !u!65 &5526876126143193364
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 907957201348925268}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8777153907775763041
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,7 +263,7 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 631546929513224396}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!33 &3856856413851575203
 MeshFilter:

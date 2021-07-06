@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     // 오브젝트 풀에 생성할 대중 최대 인원
     public int maxPublics = 10;
 
+    public PublicCtrl publicCtrl;
     public GameObject publicObj;
     // 대중 생성 간격
     public float createTime = 3.0f;
@@ -21,6 +22,8 @@ public class GameManager : MonoBehaviour
     public GameObject gObj;
     public GameObject lObj;
     public Transform obgTr;
+
+    public bool isPublicOn;
 
     public static GameManager instance = null;
 
@@ -45,6 +48,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        isPublicOn = false;
+
         if(!Physics.Raycast(playerTr.position, -playerTr.up, out hit, 2.0f, 1<<13))
         {
             // 대중 오브젝트 풀 생성
@@ -58,12 +63,15 @@ public class GameManager : MonoBehaviour
             }
 
             InvokeRepeating("CreatePublic", 3.0f, createTime);
+
+            StartCoroutine(WaitRoad());
         }
     }
 
-    void Update()
+    IEnumerator WaitRoad()
     {
-        
+        yield return new WaitForSeconds(3.0f);
+        isPublicOn = true;
     }
 
     void CreatePublic()
