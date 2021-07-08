@@ -12,54 +12,6 @@ public class KeyDatabase : MonoBehaviour
     {
         instance = this;
 
-<<<<<<< HEAD
-    // 키 목록 > 26개
-    public GameObject[] keys;
-    
-    // 추출된 키 저장할 리스트
-    public List<Key> randomKey = new List<Key>();
-
-    public Key KeyCard()
-    {
-        return randomKey[Random.Range(0, randomKey.Count)];
-    }
-
-    // 키 생성 위치
-    public Transform keyPos;
-
-    void Start()
-    {
-        //
-        keyPos = GameObject.Find("KeyPos")?.GetComponent<Transform>();
-        
-        //GameObject go = Instantiate(fieldKeyPrefab, keyPos.position, Quaternion.identity);
-        //go.GetComponent<FieldKeys>().SetKey(keyDB[Random.Range(0,25)]);
-    }
-
-    void ChooseKey()
-    {
-        while(randomKey.Count == 5)
-        {
-            for(int i = 0; i<5; i++)
-            {
-                int idx = Random.Range(0, keys.Length);
-                
-            }
-
-           
-        }
-
-        for(int i = 0; i<keys.Length; i++)
-        {
-            for (int j= 0; j<i; j++)
-            {
-                if(keys[i]==keys[j])
-                {
-                    i--;
-                    break;
-                }
-            }
-=======
         DontDestroyOnLoad(this.gameObject);
     }
 
@@ -101,7 +53,6 @@ public class KeyDatabase : MonoBehaviour
             // _key[3] 4씬 히든 스테이지에 생성 / UI UpArrow 자리에 생성 >> 위 기능 부여
             // _key[4] 5씬 히든 스테이지에 생성 / UI Jump 자리에 생성 >> 점프 기능 부여
 
->>>>>>> c3b3932bfb48c72ac2dfcb7b3c7fa690ce30fb5b
         }
     }
 }
