@@ -20,8 +20,18 @@ public class KeyDatabase : MonoBehaviour
     void Start()
     {
         keyPos = GameObject.Find("KeyPos")?.GetComponent<Transform>();
-        
+
         GameObject go = Instantiate(fieldKeyPrefab, keyPos.position, Quaternion.identity);
-        go.GetComponent<FieldKeys>().SetKey(keyDB[Random.Range(0,25)]);
+        go.GetComponent<FieldKeys>().SetKey(keyDB[Random.Range(0, 25)]);
+    }
+
+    void CreateRandomKey(int min, int max)
+    {
+        int currentNum = Random.Range(min, max);
+
+        for (int i = 0; i < max;)
+        {
+
+        }
     }
 }
