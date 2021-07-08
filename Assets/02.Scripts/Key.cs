@@ -7,18 +7,21 @@ public enum KeyType
     LeftArrow,
     DownArrow,
     RightArrow,
-    UpArrow
+    UpArrow,
+    Jump
 }
 
 [System.Serializable]
 public class Key
 {
-    public KeyType keyType;
     public string keyName;
     public GameObject keyObj;
+    public KeyType keyType;
 
-    public bool Use()
+    public Key(Key key)
     {
-        return false;
+        this.keyName = key.keyName;
+        this.keyObj = key.keyObj;
+        this.keyType = key.keyType;
     }
 }

@@ -7,7 +7,7 @@ public class SceneLoader : MonoBehaviour
 {
     private Transform playerTr;
     private Transform startPos;
-    private Transform doorPos;
+    //private Transform doorPos;
     private RaycastHit hit;
 
     public static SceneLoader instance = null;
@@ -29,7 +29,7 @@ public class SceneLoader : MonoBehaviour
     {
         playerTr = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         startPos = GameObject.FindGameObjectWithTag("STARTPOINT")?.GetComponent<Transform>();
-        doorPos = GameObject.FindGameObjectWithTag("DOOR")?.GetComponent<Transform>();
+        //doorPos = GameObject.FindGameObjectWithTag("DOOR")?.GetComponent<Transform>();
     }
 
     void Update()
@@ -45,12 +45,12 @@ public class SceneLoader : MonoBehaviour
         {
             if(hit.collider.GetComponent<SceneInfo>().sceneInfo == 0)
             {
-                playerTr.position = doorPos.position;
+                playerTr.position = new Vector3 ( 0, 1.5f, 33);
                 SceneManager.LoadScene("Stage0_D");
             }
             else if(hit.collider.GetComponent<SceneInfo>().sceneInfo == 1)
             {
-                playerTr.position = doorPos.position;
+                playerTr.position = new Vector3 ( 0, 1.5f, 33);
                 SceneManager.LoadScene("Stage1_D");
             }
         }
