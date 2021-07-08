@@ -5,7 +5,7 @@ using UnityEngine;
 public class FieldKeys : MonoBehaviour
 {
     public Key key;
-    public MeshRenderer meshRenderer;
+    private Transform playerTr;
 
     public void SetKey(Key _key)
     {
@@ -24,15 +24,16 @@ public class FieldKeys : MonoBehaviour
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
+        playerTr = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
     void OnTriggerEnter(Collider coll)
     {
-        if(coll.CompareTag("Player"))
+        if (coll.CompareTag("Player"))
         {
-            Invoke("Anim",3.0f);            
+            Invoke("Anim", 5.0f);
         }
-    } 
+    }
 
     void Anim()
     {
@@ -49,6 +50,6 @@ public class FieldKeys : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
