@@ -662,7 +662,11 @@ MonoBehaviour:
   chunksX: 1
   chunksY: 1
   chunksZ: 1
+<<<<<<< HEAD
+  material: {fileID: 1729328429}
+=======
   material: {fileID: 104071205}
+>>>>>>> 78e884a051317571e1d9ce87b7cf604fbe05d0c9
   castShadows: 1
   receiveShadows: 1
   storeAssetPath: Body
@@ -675,6 +679,8 @@ MonoBehaviour:
   claymationAnimClip: {fileID: 0}
   claymationStartFrame: 0
   claymationEndFrame: 0
+<<<<<<< HEAD
+=======
 --- !u!21 &104071205
 Material:
   serializedVersion: 6
@@ -751,6 +757,7 @@ Material:
     - _Emission: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
+>>>>>>> 78e884a051317571e1d9ce87b7cf604fbe05d0c9
 --- !u!4 &140813273 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7013186679289945887, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
@@ -2370,6 +2377,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
+--- !u!21 &703781736
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Clayxels/ClayxelURPShader
+  m_Shader: {fileID: 4800000, guid: 6ffb0de435695b24fbf9dee0f62e571c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 1aa3096b1b9d9204eaa6c75a4275adb1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaCutoff: 0.5
+    - _ClayxelSize: 1
+    - _Cutoff: 0.01
+    - _Metallic: 0
+    - _NormalOrient: 1
+    - _RoughBump: 0.023
+    - _RoughColor: 0.366
+    - _RoughOrient: 0
+    - _Smoothness: 0
+    m_Colors:
+    - _Emission: {r: 0.6320754, g: 0.58420676, b: 0.53309005, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &707801082
 GameObject:
   m_ObjectHideFlags: 0
@@ -2806,6 +2851,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7700e20206fc5e742ac49dbdae54e10b, type: 3}
+--- !u!21 &833451568
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Clayxels/ClayxelURPShader
+  m_Shader: {fileID: 4800000, guid: 6ffb0de435695b24fbf9dee0f62e571c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 1aa3096b1b9d9204eaa6c75a4275adb1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaCutoff: 0.5
+    - _ClayxelSize: 1
+    - _Cutoff: 0.01
+    - _Metallic: 0.828
+    - _NormalOrient: 0.507
+    - _RoughBump: 0.164
+    - _RoughColor: 0.493
+    - _RoughOrient: 0.455
+    - _Smoothness: 0
+    m_Colors:
+    - _Emission: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!4 &846624563 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5719330890956744708, guid: 30e48a5fa9171af4aa3b573e7e2857f9, type: 3}
@@ -3062,6 +3145,44 @@ Transform:
   m_Father: {fileID: 707801083}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &922968553
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Clayxels/ClayxelURPShader
+  m_Shader: {fileID: 4800000, guid: 6ffb0de435695b24fbf9dee0f62e571c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 1aa3096b1b9d9204eaa6c75a4275adb1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaCutoff: 0.5
+    - _ClayxelSize: 1
+    - _Cutoff: 0.01
+    - _Metallic: 0
+    - _NormalOrient: 1
+    - _RoughBump: 0.2
+    - _RoughColor: 0.48
+    - _RoughOrient: 0
+    - _Smoothness: 0.5
+    m_Colors:
+    - _Emission: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!4 &926380835 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5719330890956744708, guid: 30e48a5fa9171af4aa3b573e7e2857f9, type: 3}
@@ -5583,6 +5704,47 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7013186679289945887, guid: a6166a44e5c16a2469437c79e5887308, type: 3}
   m_PrefabInstance: {fileID: 716675185}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+--- !u!21 &1729328429
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Clayxels/ClayxelURPShader
+  m_Shader: {fileID: 4800000, guid: 6ffb0de435695b24fbf9dee0f62e571c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 1aa3096b1b9d9204eaa6c75a4275adb1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaCutoff: 0.5
+    - _ClayxelSize: 1
+    - _Cutoff: 0.01
+    - _Metallic: 0.828
+    - _NormalOrient: 0.507
+    - _RoughBump: 0.164
+    - _RoughColor: 0.493
+    - _RoughOrient: 0.455
+    - _Smoothness: 0
+    m_Colors:
+    - _Emission: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+=======
+>>>>>>> 78e884a051317571e1d9ce87b7cf604fbe05d0c9
 --- !u!1 &1782240410
 GameObject:
   m_ObjectHideFlags: 0
@@ -6475,6 +6637,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 5719330890491703589, guid: 30e48a5fa9171af4aa3b573e7e2857f9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5719330890956744704, guid: 30e48a5fa9171af4aa3b573e7e2857f9, type: 3}
       propertyPath: m_Name
       value: Floor (3)
@@ -6483,14 +6649,33 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 5719330890956744706, guid: 30e48a5fa9171af4aa3b573e7e2857f9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5719330890956744707, guid: 30e48a5fa9171af4aa3b573e7e2857f9, type: 3}
+      propertyPath: frozen
+      value: 1
+      objectReference: {fileID: 0}
+=======
     - target: {fileID: 5719330890956744704, guid: 30e48a5fa9171af4aa3b573e7e2857f9, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+>>>>>>> 78e884a051317571e1d9ce87b7cf604fbe05d0c9
     - target: {fileID: 5719330890956744707, guid: 30e48a5fa9171af4aa3b573e7e2857f9, type: 3}
       propertyPath: material
       value: 
-      objectReference: {fileID: 107598780}
+      objectReference: {fileID: 922968553}
+    - target: {fileID: 5719330890956744707, guid: 30e48a5fa9171af4aa3b573e7e2857f9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5719330890956744707, guid: 30e48a5fa9171af4aa3b573e7e2857f9, type: 3}
+      propertyPath: renderMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5719330890956744708, guid: 30e48a5fa9171af4aa3b573e7e2857f9, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -6541,6 +6726,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30e48a5fa9171af4aa3b573e7e2857f9, type: 3}
+--- !u!1 &2072574598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5719330890956744704, guid: 30e48a5fa9171af4aa3b573e7e2857f9, type: 3}
+  m_PrefabInstance: {fileID: 2072574597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!33 &2072574599
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072574598}
+  m_Mesh: {fileID: 4300000, guid: c1004f8d9ff42034ebbda2f7bb723e77, type: 2}
 --- !u!1 &2086834789
 GameObject:
   m_ObjectHideFlags: 0
@@ -6614,7 +6812,11 @@ MonoBehaviour:
   chunksX: 1
   chunksY: 1
   chunksZ: 1
+<<<<<<< HEAD
+  material: {fileID: 833451568}
+=======
   material: {fileID: 1928459556}
+>>>>>>> 78e884a051317571e1d9ce87b7cf604fbe05d0c9
   castShadows: 1
   receiveShadows: 1
   storeAssetPath: Body
