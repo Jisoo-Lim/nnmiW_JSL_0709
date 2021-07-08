@@ -10,8 +10,8 @@ TagManager:
   - PUBLICENTER
   - PLAYERENTER
   - STARTPOINT
-  - LOBJ
-  - GOBJ
+  - KEYBOARD
+  - KEYPOS
   layers:
   - Default
   - TransparentFX
