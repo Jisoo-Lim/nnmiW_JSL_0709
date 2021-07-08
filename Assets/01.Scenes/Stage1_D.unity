@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 144740964}
   - component: {fileID: 144740963}
   - component: {fileID: 144740965}
+  - component: {fileID: 144740966}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -190,6 +191,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18212af6e1a0b547964017422e95bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &144740966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144740962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c06cdafa1d95b4fba58b4bae243a9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys:
+  - {fileID: 5835980200031472257, guid: 88f8ca25b5f9b28449adb80b103c84a7, type: 3}
+  - {fileID: 295993770406479174, guid: 4a96dd222821156499637ed07b23bc27, type: 3}
+  - {fileID: 8887893780792936255, guid: f3aa45a76fa17b54f8934c6f3f696c07, type: 3}
+  - {fileID: 8758320458655959469, guid: 427c1b9cad0f674449a5b87fdbed9edc, type: 3}
+  - {fileID: 1244128080067683360, guid: f5718f76aceb1ad428dc59cbd2aa170a, type: 3}
+  - {fileID: 8129853543744912700, guid: 89c21a7e0c0832b48a44583bde93d007, type: 3}
+  - {fileID: 1385718267471766127, guid: 9f118d9fb55effd408104e35ce7a05a0, type: 3}
+  - {fileID: 4682476096650292717, guid: a8d239b8c139e7a44bd849e4cb52b950, type: 3}
+  - {fileID: 6051652052789229732, guid: c495f4b88155c9b48af80ce4c81cb8fa, type: 3}
+  - {fileID: 1507582453135781677, guid: 8af1ce728b2a2b34595e66b6810a29d8, type: 3}
+  - {fileID: 3519782811224930366, guid: 636ee5441ad282f46b4aa2d9de3d9d7c, type: 3}
+  - {fileID: 8958097236891617904, guid: 9254ed450979c794194a030f648fd023, type: 3}
+  - {fileID: 1291042958042924764, guid: a81aa1d377827e94caeee3e084c1550c, type: 3}
+  - {fileID: 1898680310938240029, guid: a45acfb4231ffd84a98d5b68a1cde373, type: 3}
+  - {fileID: 2674009771601736820, guid: 59e482f4ee6eb084eb6adcce80058aaa, type: 3}
+  - {fileID: 6949248330830954743, guid: c4786f1f62d7d0143b81fee97ffd5960, type: 3}
+  - {fileID: 7168913297743724373, guid: 212e84fbc96f0e949b90fb7ad905ea6f, type: 3}
+  - {fileID: 7102777042410528996, guid: 5faf2606a7513d941bf9ae92d4f4d634, type: 3}
+  - {fileID: 4809084511923584278, guid: a5fd62c4861e68f4c9ed03fe03d45ade, type: 3}
+  - {fileID: 1044604675371745398, guid: a77314b25f1b1c44493e586ddb140fd2, type: 3}
+  - {fileID: 2475016081513525914, guid: 2f6555886de3da44eac2de058630105a, type: 3}
+  - {fileID: 5306895047093349245, guid: 9235547a4f643dd479d3fc9bda416c11, type: 3}
+  - {fileID: 5411414474994561830, guid: 09e0f593b4538874fb3dd179da723709, type: 3}
+  - {fileID: 4923073673970435444, guid: a1629c9eb987ce041b884c27351b1009, type: 3}
+  - {fileID: 8399448541018344310, guid: 15e0327e964c8514487e1bcd7db0f05f, type: 3}
+  - {fileID: 1022134570149591517, guid: 67a57bafbd781aa47840a60f05aa925c, type: 3}
+  - {fileID: 3688249704902728736, guid: 00f637e56a099204abf262f37c27506a, type: 3}
+  keyDB: []
+  fieldKeyPrefab: {fileID: 0}
+  keyPos: {fileID: 0}
 --- !u!1 &214671002
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,7 +353,7 @@ GameObject:
   - component: {fileID: 299471282}
   - component: {fileID: 299471285}
   m_Layer: 0
-  m_Name: Key
+  m_Name: key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -580,7 +624,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objPos: {fileID: 0}
   moveSpeed: 5
-  turnSpeed: 150
   JumpPower: 5
 --- !u!54 &445686868
 Rigidbody:
@@ -684,6 +727,44 @@ Material:
     - _Smoothness: 0
     m_Colors:
     - _Emission: {r: 0.6320754, g: 0.58420676, b: 0.53309005, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &580809564
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Clayxels/ClayxelURPShader
+  m_Shader: {fileID: 4800000, guid: 6ffb0de435695b24fbf9dee0f62e571c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 1aa3096b1b9d9204eaa6c75a4275adb1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaCutoff: 0.5
+    - _ClayxelSize: 1
+    - _Cutoff: 0.01
+    - _Metallic: 0.828
+    - _NormalOrient: 0.507
+    - _RoughBump: 0.164
+    - _RoughColor: 0.493
+    - _RoughOrient: 0.455
+    - _Smoothness: 0
+    m_Colors:
+    - _Emission: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
 --- !u!1001 &589516499
@@ -968,7 +1049,11 @@ MonoBehaviour:
   chunksX: 1
   chunksY: 1
   chunksZ: 1
+<<<<<<< HEAD
   material: {fileID: 994122741}
+=======
+  material: {fileID: 580809564}
+>>>>>>> c3b3932bfb48c72ac2dfcb7b3c7fa690ce30fb5b
   castShadows: 1
   receiveShadows: 1
   storeAssetPath: Body
@@ -1133,7 +1218,11 @@ MonoBehaviour:
   chunksX: 1
   chunksY: 1
   chunksZ: 1
+<<<<<<< HEAD
   material: {fileID: 1305685768}
+=======
+  material: {fileID: 1384572038}
+>>>>>>> c3b3932bfb48c72ac2dfcb7b3c7fa690ce30fb5b
   castShadows: 1
   receiveShadows: 1
   storeAssetPath: Body
@@ -1882,6 +1971,47 @@ Material:
     - _Emission: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
+<<<<<<< HEAD
+=======
+--- !u!21 &1384572038
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Clayxels/ClayxelURPShader
+  m_Shader: {fileID: 4800000, guid: 6ffb0de435695b24fbf9dee0f62e571c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 1aa3096b1b9d9204eaa6c75a4275adb1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaCutoff: 0.5
+    - _ClayxelSize: 1
+    - _Cutoff: 0.01
+    - _Metallic: 0.828
+    - _NormalOrient: 0.507
+    - _RoughBump: 0.164
+    - _RoughColor: 0.493
+    - _RoughOrient: 0.455
+    - _Smoothness: 0
+    m_Colors:
+    - _Emission: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+>>>>>>> c3b3932bfb48c72ac2dfcb7b3c7fa690ce30fb5b
 --- !u!1 &1580967886
 GameObject:
   m_ObjectHideFlags: 0

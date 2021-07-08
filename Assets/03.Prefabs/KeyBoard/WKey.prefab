@@ -276,6 +276,7 @@ GameObject:
   - component: {fileID: 5411414474994561824}
   - component: {fileID: 5411414474994561831}
   - component: {fileID: 5411414474994561825}
+  - component: {fileID: 7923247502691557592}
   m_Layer: 0
   m_Name: WKey
   m_TagString: Untagged
@@ -355,6 +356,23 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 426e53331b220894caeef77b291b5c72, type: 2}
   frameRate: 30
   playAnim: 0
+--- !u!114 &7923247502691557592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5411414474994561830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54caaa84b1219049ba505431ab9f1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key:
+    keyType: 0
+    keyName: 
+    keyObj: {fileID: 0}
+  meshRenderer: {fileID: 0}
 --- !u!1 &5411414475122342144
 GameObject:
   m_ObjectHideFlags: 0

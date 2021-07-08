@@ -64,6 +64,7 @@ GameObject:
   - component: {fileID: 2475016081513525916}
   - component: {fileID: 2475016081513525915}
   - component: {fileID: 2475016081513525917}
+  - component: {fileID: 4372260279546598686}
   m_Layer: 0
   m_Name: UKey
   m_TagString: Untagged
@@ -142,6 +143,23 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 402078a4218a54744bdbb038a4da6291, type: 2}
   frameRate: 30
   playAnim: 0
+--- !u!114 &4372260279546598686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2475016081513525914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54caaa84b1219049ba505431ab9f1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key:
+    keyType: 0
+    keyName: 
+    keyObj: {fileID: 0}
+  meshRenderer: {fileID: 0}
 --- !u!1 &2475016081641175228
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ public class PlayerCtrl : MonoBehaviour
     private bool onStart;
 
     public float moveSpeed = 10.0f;
-    public float turnSpeed = 150.0f;
+    //public float turnSpeed = 150.0f;
     public float JumpPower = 5.0f;
 
     // 델리게이트 선언
@@ -24,7 +24,7 @@ public class PlayerCtrl : MonoBehaviour
     {
         tr = GetComponent<Transform>();
         animator = GetComponent<Animator>();
-        rigidbody = GetComponent<Rigidbody>(); 
+        rigidbody = GetComponent<Rigidbody>();
     }
 
     void Start()
@@ -34,14 +34,14 @@ public class PlayerCtrl : MonoBehaviour
 
     void Update()
     {
-        if(!onStart)
+        if (!onStart)
         {
             Move();
             Jump();
         }
 
-        Debug.DrawRay(tr.position, -tr.up *2.0f, Color.green);
-        Debug.DrawRay(tr.position, tr.forward *0.8f, Color.blue);
+        Debug.DrawRay(tr.position, -tr.up * 2.0f, Color.green);
+        Debug.DrawRay(tr.position, tr.forward * 0.8f, Color.blue);
     }
 
     void Move()
@@ -49,8 +49,9 @@ public class PlayerCtrl : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
-        tr.Translate(Vector3.forward*Time.deltaTime*moveSpeed*v);
+        //tr.Translate(Vector3.forward * Time.deltaTime * moveSpeed * v);
 
+        /*
         if(Input.GetKeyDown(KeyCode.A)||(Input.GetKeyDown(KeyCode.LeftArrow)))
         {
             transform.Rotate(0,-90,0);
@@ -59,17 +60,18 @@ public class PlayerCtrl : MonoBehaviour
         {
             transform.Rotate(0, 90, 0);
         }
+        */
         //tr.Rotate(Vector3.up * Time.deltaTime *turnSpeed*h);
-   
-        // Vector3 moveDir = (Vector3.forward*v)+(Vector3.right*h);
-        // tr.Translate(moveDir.normalized*moveSpeed*Time.deltaTime);
+
+        Vector3 moveDir = (Vector3.forward * v) + (Vector3.right * h);
+        tr.Translate(moveDir.normalized * moveSpeed * Time.deltaTime);
 
         Animation(v, h);
     }
 
     void Animation(float v, float h)
     {
-        if(v>=0.1f||v<=-0.1f||h>=0.1f||h<=-0.1f)
+        if (v >= 0.1f || v <= -0.1f || h >= 0.1f || h <= -0.1f)
         {
             animator.SetBool("IsWalk", true);
         }
@@ -101,7 +103,7 @@ public class PlayerCtrl : MonoBehaviour
 
     void Jump()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             rigidbody.AddForce(Vector3.up * JumpPower, ForceMode.Impulse);
             //animator.SetTrigger("Jump");
